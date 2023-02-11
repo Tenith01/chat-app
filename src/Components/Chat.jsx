@@ -1,7 +1,10 @@
 import React from "react";
-import cam from "../img/cam.png";
+import Cam from "../img/cam.png";
 import Add from "../img/add.png";
 import More from "../img/more.png"
+import Message from "./Message";
+import Messages from "./Messages";
+import Input from "./Input";
 
 
 const Chat = () => {
@@ -10,11 +13,13 @@ const Chat = () => {
             <div className={"chatInfo"}>
                 <span>Jane</span>
                 <div className={"chatIcons"}>
-                    <img src={"cam"} alt={""}/>
-                    <img src={"Add"} alt={""}/>
-                    <img src={"More"} alt={""}/>
+                    <img src={Cam} alt={""}/>
+                    <img src={Add} alt={""}/>
+                    <img src={More} alt={""}/>
                 </div>
             </div>
+            <Messages/>
+            <Input/>
         </div>
     )
 }
